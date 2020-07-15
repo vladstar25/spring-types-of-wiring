@@ -1,6 +1,7 @@
 package koschei.models;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -12,5 +13,9 @@ public class Ocean1 {
     @Override
     public String toString() {
         return "на океане остров " + island.toString();
+    }
+
+    public Island2 getIsland() {
+        return island;
     }
 }
